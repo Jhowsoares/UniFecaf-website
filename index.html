@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engenharia da Computação - UniFECAF</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-1">
+          <div>
+            <img class="logo" src="imgs/logo.png" alt="UniFECAF Logo" />
+          </div>
+          <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Buscar" />
+            <button onclick="searchAndScroll()">
+              <img src="imgs/search-icon.png" alt="ícone de pesquisa" />
+            </button>
+          </div>
+        </div>
+        <div>
+          <hr />
+          <nav>
+            <ul>
+              <li><a href="#curso">Curso</a></li>
+              <li><a href="#curiosidade">Curiosidade</a></li>
+              <li><a href="#matriz">Matriz Curricular</a></li>
+              <li><a href="#pesquisas">Pesquisas</a></li>
+              <li><a href="#corpo-docente">Corpo Docente</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="carousel">
+      <button class="carousel-prev">&#8249;</button>
+      <div class="carousel-item">
+        <img src="imgs/bg-computaçao.png" alt="Imagem do Carrossel" />
+        <div class="carousel-content">
+          <h1>ENGENHARIA DA COMPUTAÇÃO</h1>
+          <p>Bacharelado 4 anos</p>
+          <button>Inscreva-se</button>
+          <div class="carousel-nav">
+            <a href="#" data-index="0"></a>
+            <a href="#" data-index="1"></a>
+            <a href="#" data-index="2"></a>
+            <a href="#" data-index="3"></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-next">&#8250;</button>
+    </section>
+
+    <section id="curso" class="curso">
+      <div class="container-curso-1 container">
+        <h2>Curso</h2>
+        <p>
+          Na UniFECAF, nos dedicamos a moldar a sua formação com base nas
+          demandas reais do mercado, para que você desenvolva as competências
+          mais valorizadas pelas empresas. Nosso currículo é cuidadosamente
+          elaborado, focando no que realmente importa para o seu crescimento
+          profissional e para facilitar seu caminho rumo às melhores
+          oportunidades. <br /><br />
+          Ao se formar em Engenharia de Computação pela UniFECAF, você estará
+          preparado(a) para projetar, operar e realizar a manutenção de sistemas
+          computacionais e de automação, tanto em hardware quanto em software. E
+          mais do que isso: estará apto(a) a atuar nas tecnologias mais
+          inovadoras e transformadoras da atualidade, como Sistemas Embarcados,
+          Internet das Coisas, Ciência de Dados e Inteligência Artificial. Com
+          alta demanda e boas perspectivas de remuneração, essa é uma carreira
+          que oferece grande potencial e coloca você na vanguarda da tecnologia.
+        </p>
+      </div>
+      <div class="container-curso-2">
+        <img class="bookmark" src="imgs/bookmark.png" alt="marcador livro" />
+        <h3>SOBRE O CURSO</h3>
+        <ul>
+          <li><img src="imgs/sobrecurso1.png" alt="" />TIPO</li>
+          <li><img src="imgs/sobrecurso2.png" alt="" />MODALIDADE</li>
+          <li><img src="imgs/sobrecurso3.png" alt="" />DURAÇÃO</li>
+          <li><img src="imgs/sobrecurso4.png" alt="" />PERIODO</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Preparação Section -->
+    <section class="preparacao">
+      <div class="container">
+        <img class="bookmark" src="imgs/bookmark.png" alt="marcador livro" />
+        <h2>VOCÊ VAI SE PREPARAR PARA</h2>
+        <p>
+          Imagina poder resolver desafios reais das empresas na área de
+          Engenharia da Computação, unindo hardware, software e, claro, pessoas.
+          Aqui, você vai trabalhar com o que há de mais moderno no mercado.
+          Desde prototipar e testar robôs autônomos até criar soluções que
+          ajudam as empresas na transformação digital. Além disso, você vai
+          desenvolver dispositivos eletrônicos, trabalhar em projetos de
+          Sistemas Ciberfísicos e Automação Industrial. Tudo isso focado nas
+          habilidades mais procuradas pelo mercado, preparando você para ser o
+          profissional que as empresas realmente precisam.
+        </p>
+        <h3>ÁREAS DE ATUAÇÃO</h3>
+        <p>
+          Um profissional formado em Engenharia da Computação possui um leque
+          amplo de possibilidades de atuação, dada a crescente demanda por
+          soluções tecnológicas em diversos setores. As principais áreas de
+          atuação incluem:
+        </p>
+        <ol>
+          <li>Desenvolvimento de Software</li>
+          <li>Inteligência Artificial e Machine Learning</li>
+          <li>Redes de Computadores e Segurança da Informação</li>
+          <li>Sistemas Embarcados</li>
+          <li>Ciência de Dados</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Matriz Curricular Section -->
+    <section id="matriz" class="matriz-curricular">
+      <div class="container-matriz">
+        <h2>
+          Matriz Curricular <br />
+          - 3.000 Horas/Aula
+        </h2>
+        <div class="ano">
+          <h3>1º Ano 2025</h3>
+          <button class="btn-matriz">&#8250;</button>
+        </div>
+        <div class="matriz-content">
+          <div class="semestre-conteudo">
+            <div>
+              <h3>1º Semestre</h3>
+
+              <ul>
+                <li>Linguagens e Comunicação.</li>
+                <li>Apresentações, Documentos e Planilhas Básicas.</li>
+                <li>Empreendedorismo e Captação de Recursos.</li>
+                <li>Desenho Técnico: CAD.</li>
+                <li>Raciocínio Lógico-Matemático.</li>
+                <li>Modelagem de Sistemas Mecânicos.</li>
+              </ul>
+              <br /><br />
+            </div>
+            <div>
+              <h3>2º Semestre</h3>
+
+              <ul>
+                <li>Alta Performance em Processos Seletivos.</li>
+                <li>Computational Thinking.</li>
+                <li>Algoritmo e Estruturas de Dados.</li>
+                <li>Cálculo - Limites e Derivadas.</li>
+                <li>Modelagem de Sistemas Elétricos e Eletromagnéticos.</li>
+                <li>Projetos de Placas PCB Eletrônicas - CAD.</li>
+              </ul>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="ano">
+          <h3>2º Ano 2026</h3>
+          <button class="btn-matriz">&#8250;</button>
+        </div>
+        <div class="matriz-content">
+          <div class="semestre-conteudo">
+            <div>
+              <h3>3º Semestre</h3>
+
+              <ul>
+                <li>Linguagens e Comunicação.</li>
+                <li>Apresentações, Documentos e Planilhas Básicas.</li>
+                <li>Empreendedorismo e Captação de Recursos.</li>
+                <li>Desenho Técnico: CAD.</li>
+                <li>Raciocínio Lógico-Matemático.</li>
+                <li>Modelagem de Sistemas Mecânicos.</li>
+              </ul>
+              <br /><br />
+            </div>
+            <div>
+              <h3>4º Semestre</h3>
+
+              <ul>
+                <li>Alta Performance em Processos Seletivos.</li>
+                <li>Computational Thinking.</li>
+                <li>Algoritmo e Estruturas de Dados.</li>
+                <li>Cálculo - Limites e Derivadas.</li>
+                <li>Modelagem de Sistemas Elétricos e Eletromagnéticos.</li>
+                <li>Projetos de Placas PCB Eletrônicas - CAD.</li>
+              </ul>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="ano">
+          <h3>3º Ano 2027</h3>
+          <button class="btn-matriz">&#8250;</button>
+        </div>
+        <div class="matriz-content">
+          <div class="semestre-conteudo">
+            <div>
+              <h3>5º Semestre</h3>
+
+              <ul>
+                <li>Linguagens e Comunicação.</li>
+                <li>Apresentações, Documentos e Planilhas Básicas.</li>
+                <li>Empreendedorismo e Captação de Recursos.</li>
+                <li>Desenho Técnico: CAD.</li>
+                <li>Raciocínio Lógico-Matemático.</li>
+                <li>Modelagem de Sistemas Mecânicos.</li>
+              </ul>
+              <br /><br />
+            </div>
+            <div>
+              <h3>6º Semestre</h3>
+
+              <ul>
+                <li>Alta Performance em Processos Seletivos.</li>
+                <li>Computational Thinking.</li>
+                <li>Algoritmo e Estruturas de Dados.</li>
+                <li>Cálculo - Limites e Derivadas.</li>
+                <li>Modelagem de Sistemas Elétricos e Eletromagnéticos.</li>
+                <li>Projetos de Placas PCB Eletrônicas - CAD.</li>
+              </ul>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="ano">
+          <h3>4º Ano 2028</h3>
+          <button class="btn-matriz">&#8250;</button>
+        </div>
+        <div class="matriz-content">
+          <div class="semestre-conteudo">
+            <div>
+              <h3>7º Semestre</h3>
+
+              <ul>
+                <li>Linguagens e Comunicação.</li>
+                <li>Apresentações, Documentos e Planilhas Básicas.</li>
+                <li>Empreendedorismo e Captação de Recursos.</li>
+                <li>Desenho Técnico: CAD.</li>
+                <li>Raciocínio Lógico-Matemático.</li>
+                <li>Modelagem de Sistemas Mecânicos.</li>
+              </ul>
+              <br /><br />
+            </div>
+            <div>
+              <h3>8º Semestre</h3>
+
+              <ul>
+                <li>Alta Performance em Processos Seletivos.</li>
+                <li>Computational Thinking.</li>
+                <li>Algoritmo e Estruturas de Dados.</li>
+                <li>Cálculo - Limites e Derivadas.</li>
+                <li>Modelagem de Sistemas Elétricos e Eletromagnéticos.</li>
+                <li>Projetos de Placas PCB Eletrônicas - CAD.</li>
+              </ul>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Áreas de Pesquisa Section -->
+    <section id="pesquisas" class="areas-pesquisa">
+      <div class="container">
+        <h2>
+          Áreas de Pesquisa
+          <hr />
+        </h2>
+        <div class="pesquisa-grid">
+          <div class="pesquisa-item item-1">
+            <img src="imgs/pesquisas-item-1.png" alt="" />Redes de Computadores
+          </div>
+          <div class="pesquisa-item item-2">
+            <img src="imgs/pesquisas-item-2.png" alt="" />Sistemas Embarcados
+          </div>
+          <div class="pesquisa-item item-3">
+            <img src="imgs/pesquisas-item-3.png" alt="" />Inteligência
+            Artificial
+          </div>
+          <div class="pesquisa-item item-4">
+            <img src="imgs/pesquisas-item-4.png" alt="" />Computação em Nuvem
+          </div>
+          <div class="pesquisa-item item-5">
+            <img src="imgs/pesquisas-item-5.png" alt="" />Sistemas Distribuídos
+          </div>
+          <div class="pesquisa-item item-6">
+            <img src="imgs/pesquisas-item-6.png" alt="" />Arquitetura de
+            Computadores
+          </div>
+          <div class="pesquisa-item item-7">
+            <img src="imgs/pesquisas-item-7.png" alt="" />Segurança da
+            Informação
+          </div>
+          <div class="pesquisa-item item-8">
+            <img src="imgs/pesquisas-item-8.png" alt="" />Realidade Virtual e
+            Aumentada
+          </div>
+          <div class="pesquisa-item item-9">
+            <img src="imgs/pesquisas-item-9.png" alt="" />Automação Industrial
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corpo Docente Section -->
+    <section id="corpo-docente" class="corpo-docente">
+      <div class="container">
+        <h2>Carlos Eduardo Fontoura</h2>
+        <div class="professor">
+          <img src="imgs/professor.png" alt="Foto do Professor" />
+          <p>
+            Professor na Unifecaf desde de 2022.  Bacharel  em Física teórica
+            pela Universidade Federal do Rio Grande do Sul (FURG) (2005); Mestre
+            em Física teórica e computacional  pela Universidade Estadual
+            Paulista Júlio de Mesquita Filho (Unesp) (2007); Doutor em Física
+            teórica e computacional pela Universidade Estadual Paulista Júlio de
+            Mesquita Filho (Unesp) (2011); Pós-Doutor pela Universidad de
+            Salamanca (USUAL,Espanha) (2014); Jovem Pesquisador na Universidade
+            Estadual Paulista (IFT/Unesp, SP) (2015); Pós-doutor pelo Instituto
+            Tecnológico de Aeronáutica (ITA,SP) (2019);   Temas/áreas de
+            aderência: Modelagem Numérica e Computacional, Redes Neurais
+            Artificiais Aplicadas em Eficiência Energética e Métodos
+            Quantitativos para Análise de Dados, Computação Quântica e
+            Neuromórifica.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Continuando para outras seções -->
+    <footer>
+      <h2>Contato</h2>
+      <div class="container-footer">
+        <div class="subcontainer-footer subcontainer-footer-1">
+          <div class="item-footer">
+            <img src="imgs/telephone.png" alt="" />
+            <p>(11) 4210-4950</p>
+          </div>
+          <div class="item-footer">
+            <img src="imgs/map.png" alt="" />
+            <p>
+              Av. Vida Nova, 166 - Jardim Maria Rosa, Taboão da Serra - SP,
+              06764-045
+            </p>
+          </div>
+        </div>
+        <div class="vertical-brake"></div>
+        <div class="social-media subcontainer-footer">
+          <h2>Siga nossas redes sociais</h2>
+          <div class="social-links">
+            <div>
+              <a href="https://www.instagram.com/unifecaf/" target="_blank">
+                <img src="imgs/instagram.png" alt="instagram logo" />
+                Instagram</a
+              >
+            </div>
+            <div>
+              <a href="https://www.facebook.com/unifecaf" target="_blank">
+                <img src="imgs/facebook.png" alt="facebook logo" /> Facebook</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://api.whatsapp.com/send?phone=551142104950&text=Ol%C3%A1,%20tudo%20bem?"
+                target="_blank"
+              >
+                <img src="imgs/whatsapp.png" alt="whatsapp logo" /> WhatsApp</a
+              >
+            </div>
+            <div>
+              <a href="https://www.tiktok.com/@unifecaf" target="_blank">
+                <img src="imgs/tiktok.png" alt="tiktok logo" /> TikTok</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-footer" />
+      <img src="imgs/logo.png" alt="Logo Fecaf" class="logo-footer" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
