@@ -1,3 +1,715 @@
+const engineeringTexts = [
+  {
+    name: "Engenharia da Computação",
+    degree: "Bacharelado 4 anos",
+    courseDescription: `
+      <p>
+        Na UniFECAF, nos dedicamos a moldar a sua formação com base nas
+        demandas reais do mercado, para que você desenvolva as competências
+        mais valorizadas pelas empresas. Nosso currículo é cuidadosamente
+        elaborado, focando no que realmente importa para o seu crescimento
+        profissional e para facilitar seu caminho rumo às melhores
+        oportunidades. <br /><br />
+        Ao se formar em Engenharia de Computação pela UniFECAF, você estará
+        preparado(a) para projetar, operar e realizar a manutenção de sistemas
+        computacionais e de automação, tanto em hardware quanto em software. E
+        mais do que isso: estará apto(a) a atuar nas tecnologias mais
+        inovadoras e transformadoras da atualidade, como Sistemas Embarcados,
+        Internet das Coisas, Ciência de Dados e Inteligência Artificial. Com
+        alta demanda e boas perspectivas de remuneração, essa é uma carreira
+        que oferece grande potencial e coloca você na vanguarda da tecnologia.
+      </p>
+    `,
+    courseType: "Bacharelado",
+    modality: "Presencial / EAD",
+    duration: "4 anos",
+    period: "Noite",
+    prepareFor: `
+        <p>
+          Imagina poder resolver desafios reais das empresas na área de
+          Engenharia da Computação, unindo hardware, software e, claro, pessoas.
+          Aqui, você vai trabalhar com o que há de mais moderno no mercado.
+          Desde prototipar e testar robôs autônomos até criar soluções que
+          ajudam as empresas na transformação digital. Além disso, você vai
+          desenvolver dispositivos eletrônicos, trabalhar em projetos de
+          Sistemas Ciberfísicos e Automação Industrial. Tudo isso focado nas
+          habilidades mais procuradas pelo mercado, preparando você para ser o
+          profissional que as empresas realmente precisam.
+        </p>
+        <h3>ÁREAS DE ATUAÇÃO</h3>
+        <p>
+          Um profissional formado em Engenharia da Computação possui um leque
+          amplo de possibilidades de atuação, dada a crescente demanda por
+          soluções tecnológicas em diversos setores. As principais áreas de
+          atuação incluem:
+        </p>
+      `,
+    areas: [
+      "Desenvolvimento de Software",
+      "Inteligência Artificial e Machine Learning",
+      "Redes de Computadores e Segurança da Informação",
+      "Sistemas Embarcados",
+      "Ciência de Dados",
+    ],
+    matrizCurricular: [
+      {
+        ano: "1º Ano 2025",
+        semestres: [
+          {
+            semestre: "1º Semestre",
+            disciplinas: [
+              "Linguagens e Comunicação.",
+              "Apresentações, Documentos e Planilhas Básicas.",
+              "Empreendedorismo e Captação de Recursos.",
+              "Desenho Técnico: CAD.",
+              "Raciocínio Lógico-Matemático.",
+              "Modelagem de Sistemas Mecânicos.",
+            ],
+          },
+          {
+            semestre: "2º Semestre",
+            disciplinas: [
+              "Alta Performance em Processos Seletivos.",
+              "Computational Thinking.",
+              "Algoritmo e Estruturas de Dados.",
+              "Cálculo - Limites e Derivadas.",
+              "Modelagem de Sistemas Elétricos e Eletromagnéticos.",
+              "Projetos de Placas PCB Eletrônicas - CAD.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "2º Ano 2026",
+        semestres: [
+          {
+            semestre: "3º Semestre",
+            disciplinas: [
+              "Resolução Eficaz de Problemas.",
+              "Estatística.",
+              "Comportamento Químico e Mecânico dos Materiais.",
+              "Circuitos Lógicos-Digitais.",
+              "Projetos de Circuitos Eletrônicos: Diodos e Transistores.",
+              "Modelagem de Sistemas Ópticos e Ondulatórios.",
+            ],
+          },
+          {
+            semestre: "4º Semestre",
+            disciplinas: [
+              "Eletiva: DIYY! Primeiros Passos para Empreender.",
+              "Eletiva - LIBRAS: Língua Brasileira de Sinais.",
+              "Hardware Programável e Reconfigurável.",
+              "Eletiva: Ética e Prática Profissional em Engenharia.",
+              "Organização e Arquitetura de Computadores.",
+              "Fenômenos de Transporte.",
+              "Microcontroladores e Sistemas Embarcados.",
+              "Programação Orientada a Objetos.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "3º Ano 2027",
+        semestres: [
+          {
+            semestre: "5º Semestre",
+            disciplinas: [
+              "Eletiva: Model Based Design for Cyber-Physical Systems.",
+              "Eletiva: Robótica Móvel.",
+              "Sistemas Operacionais.",
+              "Eletiva: Internet of Things.",
+              "Automação de Sistemas.",
+              "Programação Mobile.",
+              "Programação Web.",
+            ],
+          },
+          {
+            semestre: "6º Semestre",
+            disciplinas: [
+              "Engenharia de Software.",
+              "Eletiva: Métodos Ágeis.",
+              "Eletiva: Computer Vision.",
+              "Eletiva: Data Science.",
+              "Ambiente DevOps.",
+              "Inovação Aberta.",
+              "Redes de Computadores e Internet.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "4º Ano 2028",
+        semestres: [
+          {
+            semestre: "7º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "8º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Engenharia Civil",
+    degree: "Bacharelado 5 anos",
+    courseDescription: `
+        <p>
+          Ao se formar em Engenharia Civil pela UniFECAF, você estará
+          preparado(a) para desempenhar um papel central em diversos tipos de
+          projetos e empreendimentos. Desde a liderança de equipes até o
+          planejamento, gestão e acompanhamento de obras, sua formação será
+          abrangente e estratégica. Você terá as habilidades necessárias para
+          atuar em construções residenciais, comerciais e em grandes obras
+          públicas, com especial destaque para as áreas de transporte e
+          saneamento, que estão em expansão. <br /><br />
+          Além disso, o curso oferece uma sólida base em disciplinas essenciais,
+          como mecânica dos solos, resistência dos materiais, estruturas de
+          concreto e aço, hidráulica e gestão de projetos. Essas áreas de
+          conhecimento permitirão que você projete e construa com segurança,
+          eficiência e sustentabilidade. A UniFECAF também prepara você para
+          lidar com as mais recentes tecnologias de construção e métodos
+          modernos de gestão de obras. <br /><br />
+          Com o cenário de grandes concessões e investimentos em infraestrutura,
+          o horizonte para os engenheiros civis é promissor. A demanda por
+          profissionais qualificados deve crescer, e você estará pronto(a) para
+          aproveitar essas oportunidades, atuando em projetos que têm impacto
+          direto no desenvolvimento da sociedade e na qualidade de vida das
+          pessoas.
+        </p>
+      `,
+    courseType: "Bacharelado",
+    modality: "Presencial / EAD",
+    duration: "5 anos",
+    period: "Noite",
+    prepareFor: `
+        <p>
+          Imagina poder resolver desafios reais de empresas na área de
+          Engenharia Civil, unindo inovação, tecnologia e, claro, o fator
+          humano. Aqui, você vai trabalhar com o que há de mais moderno no
+          setor. Desde planejar e projetar edificações sustentáveis até
+          desenvolver soluções de infraestrutura que transformam cidades
+          inteiras. Além disso, você vai estar envolvido em projetos de
+          mobilidade urbana, saneamento e eficiência energética. Tudo isso com
+          foco nas habilidades mais procuradas pelo mercado, preparando você
+          para ser o profissional que realmente faz a diferença em obras que
+          impactam a vida das pessoas e o desenvolvimento das cidades.
+        </p>
+        <h3>ÁREAS DE ATUAÇÃO</h3>
+        <p>
+          Um engenheiro civil possui um campo de atuação bastante amplo e
+          diversificado, podendo atuar em diversas etapas de um projeto, desde o
+          planejamento até a execução. As principais áreas de atuação incluem:
+        </p>
+      `,
+    areas: [
+      "Projetos e Construção",
+      "Consultoria e Perícia",
+      "Desenvolvimento de Novas Tecnologias",
+      "Gestão e Administração",
+    ],
+    matrizCurricular: [
+      {
+        ano: "1º Ano 2025",
+        semestres: [
+          {
+            semestre: "1º Semestre",
+            disciplinas: [
+              "Linguagens e Comunicação.",
+              "Apresentações, Documentos e Planilhas Básicas.",
+              "Empreendedorismo e Captação de Recursos.",
+              "Desenho Técnico: CAD.",
+              "Raciocínio Lógico-Matemático.",
+              "Modelagem de Sistemas Mecânicos.",
+            ],
+          },
+          {
+            semestre: "2º Semestre",
+            disciplinas: [
+              "Alta Performance em Processos Seletivos.",
+              "Computational Thinking.",
+              "Algoritmo e Estruturas de Dados.",
+              "Cálculo - Limites e Derivadas.",
+              "Modelagem de Sistemas Elétricos e Eletromagnéticos.",
+              "Projetos de Placas PCB Eletrônicas - CAD.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "2º Ano 2026",
+        semestres: [
+          {
+            semestre: "3º Semestre",
+            disciplinas: [
+              "Resolução Eficaz de Problemas.",
+              "Estatística.",
+              "Comportamento Químico e Mecânico dos Materiais.",
+              "Circuitos Lógicos-Digitais.",
+              "Projetos de Circuitos Eletrônicos: Diodos e Transistores.",
+              "Modelagem de Sistemas Ópticos e Ondulatórios.",
+            ],
+          },
+          {
+            semestre: "4º Semestre",
+            disciplinas: [
+              "Eletiva: DIYY! Primeiros Passos para Empreender.",
+              "Eletiva - LIBRAS: Língua Brasileira de Sinais.",
+              "Hardware Programável e Reconfigurável.",
+              "Eletiva: Ética e Prática Profissional em Engenharia.",
+              "Organização e Arquitetura de Computadores.",
+              "Fenômenos de Transporte.",
+              "Microcontroladores e Sistemas Embarcados.",
+              "Programação Orientada a Objetos.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "3º Ano 2027",
+        semestres: [
+          {
+            semestre: "5º Semestre",
+            disciplinas: [
+              "Eletiva: Model Based Design for Cyber-Physical Systems.",
+              "Eletiva: Robótica Móvel.",
+              "Sistemas Operacionais.",
+              "Eletiva: Internet of Things.",
+              "Automação de Sistemas.",
+              "Programação Mobile.",
+              "Programação Web.",
+            ],
+          },
+          {
+            semestre: "6º Semestre",
+            disciplinas: [
+              "Engenharia de Software.",
+              "Eletiva: Métodos Ágeis.",
+              "Eletiva: Computer Vision.",
+              "Eletiva: Data Science.",
+              "Ambiente DevOps.",
+              "Inovação Aberta.",
+              "Redes de Computadores e Internet.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "4º Ano 2028",
+        semestres: [
+          {
+            semestre: "7º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "8º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Engenharia Elétrica",
+    degree: "Bacharelado 5 anos",
+    courseDescription: `
+        <p>
+          Ao se formar em Engenharia Elétrica pela UniFECAF, você estará
+          preparado(a) para atuar em uma ampla variedade de áreas, desde a
+          geração, transmissão e distribuição de energia até o desenvolvimento
+          de sistemas eletrônicos e soluções tecnológicas avançadas. Sua
+          formação irá abranger desde os fundamentos da eletrônica e
+          eletrotécnica até as mais recentes inovações em automação,
+          telecomunicações e energias renováveis, proporcionando uma base sólida
+          e atualizada para sua carreira.<br /><br />
+          Você poderá seguir diferentes trajetórias profissionais, ocupando
+          posições como engenheiro(a) de projetos, consultor(a), eletricista,
+          pesquisador(a) ou gestor(a) em setores estratégicos, como energia,
+          automação industrial, telecomunicações, eletrônica de potência,
+          transporte elétrico e até mesmo nas crescentes áreas de energia solar
+          e eólica. Além disso, o curso proporciona o conhecimento necessário
+          para atuar em projetos de eficiência energética, sistemas de controle
+          e proteção de redes elétricas, além de desenvolvimento de dispositivos
+          eletrônicos e sistemas embarcados.<br /><br />
+          Com uma carreira dinâmica e em constante evolução, a Engenharia
+          Elétrica oferece oportunidades diversificadas em diversos setores da
+          economia, além da possibilidade de alcançar excelentes salários e
+          progressão na carreira. A crescente demanda por soluções sustentáveis
+          e tecnológicas mantém o mercado aquecido, e você estará preparado(a)
+          para contribuir com inovações que têm impacto direto na vida das
+          pessoas e no futuro energético do mundo.
+        </p>
+      `,
+    courseType: "Bacharelado",
+    modality: "Presencial / EAD",
+    duration: "5 anos",
+    period: "Noite",
+    prepareFor: `
+        <p>
+          No curso de Engenharia Elétrica, você terá a oportunidade de enfrentar
+          desafios reais, unindo inovação e tecnologia para impactar
+          positivamente a vida das pessoas. Você trabalhará em projetos que
+          tornam edificações mais eficientes e desenvolverá soluções energéticas
+          que transformam comunidades. Além disso, você se envolverá em
+          iniciativas importantes para o futuro, como energias renováveis,
+          automação industrial e mobilidade elétrica. O foco será em desenvolver
+          habilidades valorizadas pelo mercado, preparando-o para ser um
+          profissional que não apenas garante o fornecimento de energia, mas
+          também promove um uso sustentável dos recursos, contribuindo para um
+          futuro mais limpo e conectado.
+        </p>
+        <h3>ÁREAS DE ATUAÇÃO</h3>
+        <p>
+          Um engenheiro eletricista possui um leque amplo de possibilidades de
+          atuação, dada a importância da energia elétrica em praticamente todos
+          os setores da sociedade. As principais áreas de atuação incluem:
+        </p>
+      `,
+    areas: [
+      "Geração, Transmissão e Distribuição de Energia",
+      "Automação e Controle",
+      "Automação Industrial",
+      "Eletroeletrônica",
+      "Construção Civil",
+    ],
+    matrizCurricular: [
+      {
+        ano: "1º Ano 2025",
+        semestres: [
+          {
+            semestre: "1º Semestre",
+            disciplinas: [
+              "Linguagens e Comunicação.",
+              "Apresentações, Documentos e Planilhas Básicas.",
+              "Empreendedorismo e Captação de Recursos.",
+              "Desenho Técnico: CAD.",
+              "Raciocínio Lógico-Matemático.",
+              "Modelagem de Sistemas Mecânicos.",
+            ],
+          },
+          {
+            semestre: "2º Semestre",
+            disciplinas: [
+              "Alta Performance em Processos Seletivos.",
+              "Computational Thinking.",
+              "Algoritmo e Estruturas de Dados.",
+              "Cálculo - Limites e Derivadas.",
+              "Modelagem de Sistemas Elétricos e Eletromagnéticos.",
+              "Projetos de Placas PCB Eletrônicas - CAD.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "2º Ano 2026",
+        semestres: [
+          {
+            semestre: "3º Semestre",
+            disciplinas: [
+              "Resolução Eficaz de Problemas.",
+              "Estatística.",
+              "Comportamento Químico e Mecânico dos Materiais.",
+              "Circuitos Lógicos-Digitais.",
+              "Projetos de Circuitos Eletrônicos: Diodos e Transistores.",
+              "Modelagem de Sistemas Ópticos e Ondulatórios.",
+            ],
+          },
+          {
+            semestre: "4º Semestre",
+            disciplinas: [
+              "Eletiva: DIYY! Primeiros Passos para Empreender.",
+              "Eletiva - LIBRAS: Língua Brasileira de Sinais.",
+              "Hardware Programável e Reconfigurável.",
+              "Eletiva: Ética e Prática Profissional em Engenharia.",
+              "Organização e Arquitetura de Computadores.",
+              "Fenômenos de Transporte.",
+              "Microcontroladores e Sistemas Embarcados.",
+              "Programação Orientada a Objetos.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "3º Ano 2027",
+        semestres: [
+          {
+            semestre: "5º Semestre",
+            disciplinas: [
+              "Eletiva: Model Based Design for Cyber-Physical Systems.",
+              "Eletiva: Robótica Móvel.",
+              "Sistemas Operacionais.",
+              "Eletiva: Internet of Things.",
+              "Automação de Sistemas.",
+              "Programação Mobile.",
+              "Programação Web.",
+            ],
+          },
+          {
+            semestre: "6º Semestre",
+            disciplinas: [
+              "Engenharia de Software.",
+              "Eletiva: Métodos Ágeis.",
+              "Eletiva: Computer Vision.",
+              "Eletiva: Data Science.",
+              "Ambiente DevOps.",
+              "Inovação Aberta.",
+              "Redes de Computadores e Internet.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "4º Ano 2028",
+        semestres: [
+          {
+            semestre: "7º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "8º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Engenharia de Produção",
+    degree: "Bacharelado 5 anos",
+    courseDescription: `
+       <p>
+          Com a formação em Engenharia de Produção pela UniFECAF, você estará
+          preparado(a) para liderar e otimizar processos produtivos em empresas
+          de diversos setores e tamanhos. Essa graduação oferece uma visão ampla
+          e estratégica, desenvolvendo competências essenciais para aumentar a
+          eficiência, a qualidade e a lucratividade dos negócios, tornando você
+          um(a) profissional indispensável no mercado atual.<br /><br />
+          O curso abrange uma vasta gama de conhecimentos, desde a gestão de
+          operações e projetos até o controle de qualidade, gestão de recursos
+          humanos, financeiros, materiais e logística. Além disso, você também
+          será capacitado(a) em áreas como análise de custos, planejamento
+          estratégico, inovação e sustentabilidade, integrando práticas que
+          promovem o desenvolvimento de sistemas produtivos mais eficientes e
+          competitivos.<br /><br />
+          A UniFECAF prepara você para atuar em processos de automação,
+          otimização e gestão de projetos, com foco em tecnologias emergentes e
+          práticas de gestão que estão moldando o futuro das indústrias e
+          serviços. A engenharia de produção também abre portas para atuar em
+          áreas como gestão da cadeia de suprimentos, melhoria contínua e
+          análise de dados, promovendo uma visão analítica e orientada a
+          resultados. <br /><br />
+          Com essa formação, você terá a capacidade de se destacar em setores
+          como indústrias de manufatura, serviços, tecnologia, varejo e
+          consultoria, com a flexibilidade de aplicar seu conhecimento em
+          diferentes contextos. Além disso, a crescente demanda por
+          profissionais qualificados nessa área oferece excelentes oportunidades
+          de carreira e remuneração.
+        </p>
+      `,
+    courseType: "Bacharelado",
+    modality: "Presencial / EAD",
+    duration: "5 anos",
+    period: "Noite",
+    prepareFor: `
+       <p>
+          Imagina enfrentar desafios reais na Engenharia Elétrica, unindo
+          inovação e tecnologia para impactar positivamente a vida das pessoas.
+          Você vai trabalhar com sistemas elétricos que tornam edificações mais
+          eficientes e desenvolver soluções energéticas que transformam
+          comunidades. Além disso, participará de projetos essenciais para o
+          futuro, como energias renováveis, automação industrial e mobilidade
+          elétrica. Aprender na prática é fundamental! Nos laboratórios
+          modernos, você desenvolverá projetos reais, aplicando conhecimentos em
+          situações do mundo real. Ao final do curso, você estará preparado para
+          fazer a diferença, promovendo um uso inteligente e sustentável dos
+          recursos e pronto para se destacar no mercado de trabalho.
+        </p>
+        <h3>ÁREAS DE ATUAÇÃO</h3>
+        <p>
+          O engenheiro de produção é um profissional multidisciplinar, capaz de
+          atuar em diversas áreas, desde a concepção de um produto até a sua
+          entrega ao consumidor final. Sua formação abrangente permite que ele
+          otimize processos, reduza custos e aumente a eficiência em diversas
+          organizações. As principais áreas de atuação para um engenheiro de
+          produção incluem:
+        </p>
+      `,
+    areas: [
+      "Gestão de Processos",
+      "Gestão de Projetos",
+      "Engenharia de Métodos",
+      "Pesquisa Operacional",
+      "Engenharia de Produto",
+    ],
+    matrizCurricular: [
+      {
+        ano: "1º Ano 2025",
+        semestres: [
+          {
+            semestre: "1º Semestre",
+            disciplinas: [
+              "Linguagens e Comunicação.",
+              "Apresentações, Documentos e Planilhas Básicas.",
+              "Empreendedorismo e Captação de Recursos.",
+              "Desenho Técnico: CAD.",
+              "Raciocínio Lógico-Matemático.",
+              "Modelagem de Sistemas Mecânicos.",
+            ],
+          },
+          {
+            semestre: "2º Semestre",
+            disciplinas: [
+              "Alta Performance em Processos Seletivos.",
+              "Computational Thinking.",
+              "Algoritmo e Estruturas de Dados.",
+              "Cálculo - Limites e Derivadas.",
+              "Modelagem de Sistemas Elétricos e Eletromagnéticos.",
+              "Projetos de Placas PCB Eletrônicas - CAD.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "2º Ano 2026",
+        semestres: [
+          {
+            semestre: "3º Semestre",
+            disciplinas: [
+              "Resolução Eficaz de Problemas.",
+              "Estatística.",
+              "Comportamento Químico e Mecânico dos Materiais.",
+              "Circuitos Lógicos-Digitais.",
+              "Projetos de Circuitos Eletrônicos: Diodos e Transistores.",
+              "Modelagem de Sistemas Ópticos e Ondulatórios.",
+            ],
+          },
+          {
+            semestre: "4º Semestre",
+            disciplinas: [
+              "Eletiva: DIYY! Primeiros Passos para Empreender.",
+              "Eletiva - LIBRAS: Língua Brasileira de Sinais.",
+              "Hardware Programável e Reconfigurável.",
+              "Eletiva: Ética e Prática Profissional em Engenharia.",
+              "Organização e Arquitetura de Computadores.",
+              "Fenômenos de Transporte.",
+              "Microcontroladores e Sistemas Embarcados.",
+              "Programação Orientada a Objetos.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "3º Ano 2027",
+        semestres: [
+          {
+            semestre: "5º Semestre",
+            disciplinas: [
+              "Eletiva: Model Based Design for Cyber-Physical Systems.",
+              "Eletiva: Robótica Móvel.",
+              "Sistemas Operacionais.",
+              "Eletiva: Internet of Things.",
+              "Automação de Sistemas.",
+              "Programação Mobile.",
+              "Programação Web.",
+            ],
+          },
+          {
+            semestre: "6º Semestre",
+            disciplinas: [
+              "Engenharia de Software.",
+              "Eletiva: Métodos Ágeis.",
+              "Eletiva: Computer Vision.",
+              "Eletiva: Data Science.",
+              "Ambiente DevOps.",
+              "Inovação Aberta.",
+              "Redes de Computadores e Internet.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "4º Ano 2028",
+        semestres: [
+          {
+            semestre: "7º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "8º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+
 document.querySelectorAll(".ano button").forEach(function (button) {
   button.addEventListener("click", function () {
     const content = this.parentElement.nextElementSibling;
@@ -65,11 +777,51 @@ const nextButton = document.querySelector(".carousel-next");
 const navLinks = document.querySelectorAll(".carousel-nav a");
 
 function updateCarousel() {
+  // Atualiza a imagem do carrossel
   imgElement.src = images[currentIndex];
+
+  // Atualiza os textos conforme a engenharia selecionada
+  const engineeringData = engineeringTexts[currentIndex];
+  document.querySelector(".carousel-content h1").textContent =
+    engineeringData.name;
+  document.querySelector(".carousel-content p").textContent =
+    engineeringData.degree;
+
+  // Atualizar o conteúdo de descrição do curso
+  const courseDescriptionElement = document.querySelector(".curso p");
+  courseDescriptionElement.innerHTML = engineeringData.courseDescription; // Atualizando com HTML, já que está no formato de string HTML
+
+  // Atualizar as informações sobre o curso (tipo, modalidade, etc.)
+  document.querySelectorAll(".container-curso-2 ul li").forEach((li, index) => {
+    const infoFields = ["courseType", "modality", "duration", "period"];
+    li.innerHTML = `<img src="imgs/sobrecurso${index + 1}.png" alt="" />${
+      engineeringData[infoFields[index]]
+    }`;
+  });
+
+  // Atualiza a seção "VOCÊ VAI SE PREPARAR PARA"
+  const preparacaoElement = document.querySelector(".preparacao p");
+  preparacaoElement.innerHTML = engineeringData.prepareFor; // Atualiza o conteúdo HTML de 'prepareFor'
+
+  // Atualiza as áreas de atuação dentro da seção "VOCÊ VAI SE PREPARAR PARA"
+  const areasList = document.querySelector(".preparacao ol");
+  areasList.innerHTML = ""; // Limpa a lista existente
+
+  // Preenche a lista de áreas com os dados do array 'areas'
+  engineeringData.areas.forEach((area) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = area;
+    areasList.appendChild(listItem);
+  });
+
+  // Atualiza os links de navegação do carrossel
   navLinks.forEach((link, index) => {
     link.classList.toggle("active", index === currentIndex);
   });
 }
+
+// Chama a função para atualizar o carrossel e textos logo de início
+updateCarousel();
 
 prevButton.addEventListener("click", () => {
   currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
@@ -88,8 +840,6 @@ navLinks.forEach((link, index) => {
     updateCarousel();
   });
 });
-
-updateCarousel();
 
 function searchAndScroll() {
   const searchInput = document
