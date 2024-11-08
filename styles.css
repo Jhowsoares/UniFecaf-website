@@ -451,12 +451,14 @@ ul img {
 
 .semestre-conteudo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .matriz-content.expanded {
-  display: block; /* Exibe o conteúdo quando expandido */
+  display: flex; /* Exibe o conteúdo quando expandido */
+  justify-content: space-evenly;
+  align-items: flex-start;
   background-color: rgba(217, 217, 217, 0.3);
   border-radius: 0px 0px 0px 100px;
   margin-left: 16.5vw;
@@ -481,6 +483,65 @@ ul img {
 
 .btn-matriz:hover {
   background-color: #a8a8a8;
+}
+
+.corpo-docente {
+  display: flex;
+  overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.prof-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.professor-slide {
+  flex: 0 0 100%; /* Cada slide ocupa 100% da largura da tela */
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.professor-info {
+  width: 80%;
+  text-align: center;
+}
+
+.professor-info p {
+  margin: 20px;
+}
+
+/* Botões de navegação únicos */
+.btns-prof {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 100px;
+}
+
+.btns-prof:hover {
+  color: #a8a8a8;
+}
+
+.prev-button {
+  left: 10px;
+  margin: 50px;
+}
+
+.next-button {
+  right: 10px;
+  margin: 50px;
 }
 
 footer {

@@ -341,6 +341,35 @@ const engineeringTexts = [
           },
         ],
       },
+      {
+        ano: "5º Ano 2029",
+        semestres: [
+          {
+            semestre: "9º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "10º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -521,6 +550,35 @@ const engineeringTexts = [
           },
         ],
       },
+      {
+        ano: "5º Ano 2029",
+        semestres: [
+          {
+            semestre: "9º Semestre",
+            disciplinas: [
+              "Compiladores.",
+              "Cyber Security.",
+              "Estágio Supervisionado em Engenharia da Computação.",
+              "Cloud Computing.",
+              "Trabalho de Conclusão de Curso em Engenharia da Computação.",
+              "Atividades Complementares - 100 Horas.",
+              "Inteligência Artificial.",
+              "Extensão Curricularizada em Engenharia da Computação.",
+            ],
+          },
+          {
+            semestre: "10º Semestre",
+            disciplinas: [
+              "ESG: Sustentabilidade das Organizações.",
+              "Gestão de Diversidades e Políticas de Inclusão.",
+              "Gestão de Projetos.",
+              "Prototipação em Engenharia.",
+              "Relacionamento Interpessoal.",
+              "Saúde: Segurança e Qualidade de Vida no Trabalho.",
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -683,6 +741,35 @@ const engineeringTexts = [
           {
             semestre: "7º Semestre",
             disciplinas: [
+              "Eletiva: Model Based Design for Cyber-Physical Systems.",
+              "Eletiva: Robótica Móvel.",
+              "Sistemas Operacionais.",
+              "Eletiva: Internet of Things.",
+              "Automação de Sistemas.",
+              "Programação Mobile.",
+              "Programação Web.",
+            ],
+          },
+          {
+            semestre: "8º Semestre",
+            disciplinas: [
+              "Engenharia de Software.",
+              "Eletiva: Métodos Ágeis.",
+              "Eletiva: Computer Vision.",
+              "Eletiva: Data Science.",
+              "Ambiente DevOps.",
+              "Inovação Aberta.",
+              "Redes de Computadores e Internet.",
+            ],
+          },
+        ],
+      },
+      {
+        ano: "5º Ano 2029",
+        semestres: [
+          {
+            semestre: "9º Semestre",
+            disciplinas: [
               "Compiladores.",
               "Cyber Security.",
               "Estágio Supervisionado em Engenharia da Computação.",
@@ -694,7 +781,7 @@ const engineeringTexts = [
             ],
           },
           {
-            semestre: "8º Semestre",
+            semestre: "10º Semestre",
             disciplinas: [
               "ESG: Sustentabilidade das Organizações.",
               "Gestão de Diversidades e Políticas de Inclusão.",
@@ -710,59 +797,7 @@ const engineeringTexts = [
   },
 ];
 
-document.querySelectorAll(".ano button").forEach(function (button) {
-  button.addEventListener("click", function () {
-    const content = this.parentElement.nextElementSibling;
-
-    if (content.classList.contains("expanded")) {
-      content.style.maxHeight = content.scrollHeight + "px";
-      content.style.padding = "50px";
-
-      requestAnimationFrame(() => {
-        content.style.maxHeight = "0";
-        content.style.padding = "0";
-      });
-
-      setTimeout(() => {
-        content.classList.remove("expanded");
-        content.style.display = "none";
-      }, 500);
-
-      // Remove the rotate class when collapsed
-      this.classList.remove("rotate");
-    } else {
-      document
-        .querySelectorAll(".matriz-content.expanded")
-        .forEach(function (openContent) {
-          openContent.style.maxHeight = openContent.scrollHeight + "px";
-          openContent.style.padding = "50px";
-
-          requestAnimationFrame(() => {
-            openContent.style.maxHeight = "0";
-            openContent.style.padding = "0";
-          });
-
-          setTimeout(() => {
-            openContent.classList.remove("expanded");
-            openContent.style.display = "none";
-            // Remove the rotate class from all buttons
-            openContent.previousElementSibling
-              .querySelector("button")
-              .classList.remove("rotate");
-          }, 500);
-        });
-
-      content.classList.add("expanded");
-      content.style.display = "block";
-      content.style.maxHeight = content.scrollHeight + "px";
-      content.style.padding = "50px";
-
-      // Add the rotate class when expanded
-      this.classList.add("rotate");
-    }
-  });
-});
-
+// Definindo as imagens do carrossel e o índice inicial
 const images = [
   "imgs/bg-computaçao.png",
   "imgs/bg-civil.png",
@@ -771,11 +806,13 @@ const images = [
 ];
 let currentIndex = 0;
 
+// Seletores do carrossel
 const imgElement = document.querySelector(".carousel-item img");
 const prevButton = document.querySelector(".carousel-prev");
 const nextButton = document.querySelector(".carousel-next");
 const navLinks = document.querySelectorAll(".carousel-nav a");
 
+// Função para atualizar o carrossel
 function updateCarousel() {
   // Atualiza a imagem do carrossel
   imgElement.src = images[currentIndex];
@@ -789,7 +826,7 @@ function updateCarousel() {
 
   // Atualizar o conteúdo de descrição do curso
   const courseDescriptionElement = document.querySelector(".curso p");
-  courseDescriptionElement.innerHTML = engineeringData.courseDescription; // Atualizando com HTML, já que está no formato de string HTML
+  courseDescriptionElement.innerHTML = engineeringData.courseDescription;
 
   // Atualizar as informações sobre o curso (tipo, modalidade, etc.)
   document.querySelectorAll(".container-curso-2 ul li").forEach((li, index) => {
@@ -801,13 +838,11 @@ function updateCarousel() {
 
   // Atualiza a seção "VOCÊ VAI SE PREPARAR PARA"
   const preparacaoElement = document.querySelector(".preparacao p");
-  preparacaoElement.innerHTML = engineeringData.prepareFor; // Atualiza o conteúdo HTML de 'prepareFor'
+  preparacaoElement.innerHTML = engineeringData.prepareFor;
 
   // Atualiza as áreas de atuação dentro da seção "VOCÊ VAI SE PREPARAR PARA"
   const areasList = document.querySelector(".preparacao ol");
   areasList.innerHTML = ""; // Limpa a lista existente
-
-  // Preenche a lista de áreas com os dados do array 'areas'
   engineeringData.areas.forEach((area) => {
     const listItem = document.createElement("li");
     listItem.textContent = area;
@@ -818,7 +853,121 @@ function updateCarousel() {
   navLinks.forEach((link, index) => {
     link.classList.toggle("active", index === currentIndex);
   });
+
+  // Atualiza a matriz curricular
+  updateMatrizCurricular(engineeringData.matrizCurricular);
+
+  // Adiciona eventos de expansão da matriz curricular
+  initExpandButtons();
 }
+
+// Função para atualizar a matriz curricular
+function updateMatrizCurricular(matrizCurricular) {
+  const matrizContainer = document.querySelector(".container-matriz");
+  matrizContainer.innerHTML = ""; // Limpa o conteúdo atual
+
+  matrizCurricular.forEach((anoData) => {
+    const anoDiv = document.createElement("div");
+    anoDiv.classList.add("ano");
+
+    const h3 = document.createElement("h3");
+    h3.textContent = anoData.ano;
+    anoDiv.appendChild(h3);
+
+    const btnExpand = document.createElement("button");
+    btnExpand.classList.add("btn-matriz");
+    btnExpand.innerHTML = "&#8250;";
+    anoDiv.appendChild(btnExpand);
+
+    matrizContainer.appendChild(anoDiv);
+
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("matriz-content");
+    matrizContainer.appendChild(contentDiv);
+
+    anoData.semestres.forEach((semestreData) => {
+      const semestreDiv = document.createElement("div");
+      semestreDiv.classList.add("semestre-conteudo");
+
+      const semestreTitle = document.createElement("h3");
+      semestreTitle.textContent = semestreData.semestre;
+      semestreDiv.appendChild(semestreTitle);
+
+      const ul = document.createElement("ul");
+
+      // Adiciona os itens à lista `ul`, garantindo a quantidade necessária de `<li>`
+      semestreData.disciplinas.forEach((disciplina, index) => {
+        let li;
+        // Verifica se existe um `<li>` já presente no `ul`
+        if (ul.children[index]) {
+          li = ul.children[index]; // Reutiliza o `<li>` existente, se possível
+        } else {
+          li = document.createElement("li"); // Cria um novo `<li>` se não existir
+          ul.appendChild(li);
+        }
+        li.textContent = disciplina; // Define o texto do item
+      });
+
+      semestreDiv.appendChild(ul);
+      contentDiv.appendChild(semestreDiv);
+    });
+  });
+}
+
+// Função para expandir ou colapsar a matriz curricular
+function initExpandButtons() {
+  document.querySelectorAll(".btn-matriz").forEach((button) => {
+    button.addEventListener("click", function () {
+      const content = this.parentElement.nextElementSibling;
+
+      if (content.classList.contains("expanded")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "20px";
+
+        requestAnimationFrame(() => {
+          content.style.maxHeight = "0";
+          content.style.padding = "0";
+        });
+
+        setTimeout(() => {
+          content.classList.remove("expanded");
+          content.style.display = "none";
+        }, 500);
+
+        this.classList.remove("rotate");
+      } else {
+        document
+          .querySelectorAll(".matriz-content.expanded")
+          .forEach((openContent) => {
+            openContent.style.maxHeight = openContent.scrollHeight + "px";
+            openContent.style.padding = "20px";
+
+            requestAnimationFrame(() => {
+              openContent.style.maxHeight = "0";
+              openContent.style.padding = "0";
+            });
+
+            setTimeout(() => {
+              openContent.classList.remove("expanded");
+              openContent.style.display = "none";
+              openContent.previousElementSibling
+                .querySelector("button")
+                .classList.remove("rotate");
+            }, 500);
+          });
+
+        content.classList.add("expanded");
+        content.style.display = "";
+        content.style.maxHeight = content.scrollHeight + 100 + "px";
+        content.style.padding = "20px";
+        this.classList.add("rotate");
+      }
+    });
+  });
+}
+
+// Inicializa o carrossel
+updateCarousel();
 
 // Chama a função para atualizar o carrossel e textos logo de início
 updateCarousel();
@@ -912,12 +1061,19 @@ function highlightText(textNode, searchText) {
     parent.insertBefore(before, highlight);
   }
 }
+const nextButtons = document.querySelectorAll(".next-button");
+const prevButtons = document.querySelectorAll(".prev-button");
+const container = document.querySelector(".corpo-docente");
+const slideWidth = document.querySelector(".professor-slide").clientWidth;
 
-// Função para remover os destaques anteriores
-function removeHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach((highlight) => {
-    const textNode = document.createTextNode(highlight.textContent);
-    highlight.parentNode.replaceChild(textNode, highlight);
+nextButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    container.scrollBy({ left: slideWidth, behavior: "smooth" });
   });
-}
+});
+
+prevButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    container.scrollBy({ left: -slideWidth, behavior: "smooth" });
+  });
+});
