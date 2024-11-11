@@ -43,7 +43,6 @@ Gestão de Estoques: A Engenharia de Produção tem um papel essencial na otimiz
 Ergonomia e Produtividade: A Engenharia de Produção também se envolve na melhoria das condições de trabalho, utilizando a ergonomia para projetar postos de trabalho que maximizem a produtividade e minimizem o risco de lesões ocupacionais.
 */
 
-
 body {
   background: rgb(2, 48, 89);
   background: linear-gradient(
@@ -361,7 +360,7 @@ p {
 }
 
 .corpo-docente img {
-  height: 200px;
+  height: 500px;
 }
 
 .curso {
@@ -553,7 +552,8 @@ ul img {
 }
 
 .professor-info p {
-  margin: 20px;
+  margin: 80px;
+  padding: 60px;
 }
 
 /* Botões de navegação únicos */
