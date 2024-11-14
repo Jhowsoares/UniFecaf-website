@@ -5,43 +5,6 @@
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-/*
-Engenharia da Computação
-Origem da Computação: A Engenharia da Computação é uma fusão da Engenharia Elétrica com a Ciência da Computação. Ela se desenvolveu a partir da necessidade de projetar hardware para sistemas computacionais e a criação de softwares eficientes para operá-los.
-
-Processadores e Microchips: Um dos maiores avanços na Engenharia da Computação foi a miniaturização dos microchips, que permitiu a evolução dos computadores pessoais e, eventualmente, a criação de dispositivos móveis, como smartphones e wearables.
-
-Inteligência Artificial: A IA e o aprendizado de máquina são subáreas da Engenharia da Computação que têm experimentado um crescimento impressionante, sendo aplicadas em áreas tão diversas quanto a medicina, a educação, a indústria automotiva e até a arte.
-
-O Impacto da Computação Quântica: O campo da computação está prestes a sofrer uma revolução com o desenvolvimento da computação quântica, que tem o potencial de resolver problemas que são intransponíveis para os computadores clássicos.
-
-Engenharia Civil
-Primeiras Grandes Obras: A Engenharia Civil é uma das mais antigas, com marcos históricos como a construção das pirâmides do Egito, o Coliseu de Roma e o sistema de aquedutos da Roma Antiga, que ainda são impressionantes em termos de engenharia estrutural.
-
-A Torre de Pisa: A famosa Torre de Pisa, na Itália, está inclinada devido a um erro de cálculo durante a construção. Engenheiros modernos trabalham para evitar que ela caia, realizando intervenções para estabilizar a estrutura.
-
-Estruturas Subaquáticas: A Engenharia Civil também envolve a construção de estruturas subaquáticas, como plataformas de petróleo e túneles submarinos, que exigem conhecimentos avançados de materiais e técnicas de construção em condições extremas.
-
-As Cidades Sustentáveis: Com o crescente foco em sustentabilidade, a Engenharia Civil está cada vez mais voltada para a criação de "cidades verdes", que utilizam tecnologias para reduzir o impacto ambiental, como construções com materiais recicláveis, eficiência energética e sistemas de drenagem para evitar enchentes.
-
-Engenharia Elétrica
-Descoberta do Eletromagnetismo: O desenvolvimento da Engenharia Elétrica começou com estudos sobre eletricidade e magnetismo, com nomes como Michael Faraday e James Clerk Maxwell. As descobertas deles ajudaram a criar as bases para motores elétricos e sistemas de comunicação.
-
-A Revolução da Energia Renovável: A Engenharia Elétrica desempenha um papel fundamental na transição energética global, com o desenvolvimento de novas fontes de energia renovável, como a solar e a eólica. Inovações em armazenamento de energia também têm ajudado a tornar essas fontes mais viáveis.
-
-Redes Inteligentes: O conceito de "smart grids" (redes elétricas inteligentes) está transformando a maneira como a eletricidade é distribuída. Essas redes usam tecnologias digitais para melhorar a eficiência, monitorar o consumo e integrar fontes de energia renovável de forma mais eficiente.
-
-Transmissão Sem Fio de Energia: Embora pareça algo de ficção científica, já estão sendo feitos experimentos para transmitir energia sem fio, utilizando tecnologias como micro-ondas ou lasers, com potencial para revolucionar a forma como a energia é distribuída.
-
-Engenharia de Produção
-O Sistema Toyota de Produção: O Sistema Toyota de Produção (TPS) é uma das metodologias mais conhecidas dentro da Engenharia de Produção. Ele busca eliminar desperdícios e melhorar a eficiência por meio de práticas como "just-in-time" e "kaizen" (melhoria contínua).
-
-Indústria 4.0: A Engenharia de Produção está no centro da transformação digital da indústria, com a implementação de tecnologias como Internet das Coisas (IoT), automação, inteligência artificial e big data. Esse movimento é conhecido como Indústria 4.0 e visa tornar a produção mais inteligente e eficiente.
-
-Gestão de Estoques: A Engenharia de Produção tem um papel essencial na otimização de processos logísticos e de gestão de estoques. Modelos como o MRP (Material Requirements Planning) e o ERP (Enterprise Resource Planning) são usados para garantir que a produção ocorra de forma eficiente e sem paradas.
-
-Ergonomia e Produtividade: A Engenharia de Produção também se envolve na melhoria das condições de trabalho, utilizando a ergonomia para projetar postos de trabalho que maximizem a produtividade e minimizem o risco de lesões ocupacionais.
-*/
 
 body {
   background: rgb(2, 48, 89);
@@ -360,7 +323,7 @@ p {
 }
 
 .corpo-docente img {
-  height: 500px;
+  height: 20vw;
 }
 
 .curso {
@@ -673,6 +636,68 @@ footer {
 .areas-pesquisa hr {
   width: 25vw;
 }
+.project-section {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background-color: #0d2b4c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  gap: 2rem;
+}
+
+.project-content {
+  width: 40%;
+  color: #ffffff;
+}
+
+.project-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.project-gallery {
+  width: 30%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-description {
+  width: 30%;
+  background-color: #4caf50;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.project-description h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #054f3b;
+  text-align: center;
+}
+
+.project-description p {
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 1.6;
+}
 
 footer .social-media a {
   margin: 0 0.625rem; /* 10px */
@@ -716,11 +741,63 @@ footer .social-media a {
 /* CSS geral (tamanhos base em rem) já aplicado aqui... */
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  p {
-    font-size: 1.125rem; /* 18px */
+@media (max-width: 1870px) {
+  ul img {
+    height: 4rem;
   }
-
+  .carousel-nav a {
+    bottom: -24rem;
+  }
+}
+@media (max-width: 1700px) {
+  .carousel-nav a {
+    bottom: -22rem;
+  }
+}
+@media (max-width: 1625px) {
+  html {
+    font-size: 15px;
+  }
+  ul img {
+    height: 3.5rem;
+  }
+  .carousel-nav a {
+    bottom: -20rem;
+  }
+  .container-curso-1 {
+    margin: 50px;
+  }
+  .container-curso-2 h3 {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+  .bookmark {
+    width: 80px;
+    left: calc(105% - 6rem);
+  }
+  .carousel-nav a {
+    bottom: -22rem;
+  }
+}
+@media (max-width: 1480px) {
+  .carousel-nav a {
+    bottom: -20rem;
+  }
+}
+@media (max-width: 1370px) {
+  .carousel-nav a {
+    bottom: -18rem;
+  }
+}
+@media (max-width: 1270px) {
+  .carousel-nav a {
+    bottom: -16rem;
+  }
+  .professor-info p {
+    margin: 0;
+  }
+}
+@media (max-width: 1200px) {
   .carousel-content h1 {
     font-size: 2.5rem; /* 40px */
   }
@@ -736,8 +813,24 @@ footer .social-media a {
   .container-curso-2 li {
     font-size: 1.375rem; /* 22px */
   }
+  .bookmark {
+    width: 70px;
+    left: calc(115% - 6rem);
+  }
+  .carousel-nav a {
+    bottom: -15rem;
+  }
+  html {
+    font-size: 14px;
+  }
+  ul img {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  .container-curso-2 h3 {
+    padding-left: 2rem;
+  }
 }
-
 @media (max-width: 992px) {
   p {
     font-size: 1rem; /* 16px */

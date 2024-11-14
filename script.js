@@ -21,9 +21,9 @@ const engineeringTexts = [
       </p>
     `,
     courseType: "Bacharelado",
-    modality: "Presencial / EAD",
+    modality: "Presencial e EAD",
     duration: "4 anos",
-    period: "Noite",
+    period: "Matutino ou Noturno",
     prepareFor: `
         <p>
           Imagina poder resolver desafios reais das empresas na área de
@@ -197,9 +197,9 @@ const engineeringTexts = [
         </p>
       `,
     courseType: "Bacharelado",
-    modality: "Presencial / EAD",
+    modality: "Presencial e EAD",
     duration: "5 anos",
-    period: "Noite",
+    period: "Matutino ou Noturno",
     prepareFor: `
         <p>
           Imagina poder resolver desafios reais de empresas na área de
@@ -400,9 +400,9 @@ const engineeringTexts = [
         </p>
       `,
     courseType: "Bacharelado",
-    modality: "Presencial / EAD",
+    modality: "Presencial e EAD",
     duration: "5 anos",
-    period: "Noite",
+    period: "Matutino ou Noturno",
     prepareFor: `
         <p>
           No curso de Engenharia Elétrica, você terá a oportunidade de enfrentar
@@ -539,7 +539,7 @@ const engineeringTexts = [
               "Eletiva: Sistemas Supervisórios SCADA.",
               "Estágio Supervisionado em Engenharia Elétrica I.",
               "Sistemas de Controle Automático.",
-              "Sistemas de Potêcia em Alta Tensão"
+              "Sistemas de Potêcia em Alta Tensão",
             ],
           },
         ],
@@ -567,7 +567,7 @@ const engineeringTexts = [
               "Prototipação em Engenharia.",
               "Relacionamento Interpessoal.",
               "Saúde: Segurança e Qualidade de Vida no Trabalho.",
-              "Atividades Complementares - 100 Horas."
+              "Atividades Complementares - 100 Horas.",
             ],
           },
         ],
@@ -608,9 +608,9 @@ const engineeringTexts = [
         </p>
       `,
     courseType: "Bacharelado",
-    modality: "Presencial / EAD",
+    modality: "Presencial e EAD",
     duration: "5 anos",
-    period: "Noite",
+    period: "Matutino ou Noturno",
     prepareFor: `
        <p>
           Imagina enfrentar desafios reais na Engenharia Elétrica, unindo
@@ -776,7 +776,7 @@ const engineeringTexts = [
               "Relacionamento Interpessoal.",
               "Saúde: Segurança e Qualidade de Vida no Trabalho.",
               "Atividades Complementares - 100 Horas.",
-              "Extensão Curricularizada em Engenharia de Produção."
+              "Extensão Curricularizada em Engenharia de Produção.",
             ],
           },
         ],
