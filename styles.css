@@ -248,7 +248,6 @@ p {
 
 .curso h2,
 .preparacao h2,
-.matriz-curricular h2,
 .areas-pesquisa h2,
 .corpo-docente h2 {
   font-size: 2.5rem; /* 40px */
@@ -376,6 +375,13 @@ ul img {
   padding-right: 2.5rem; /* 40px */
 }
 
+.h2-matriz {
+  margin-left: 50px;
+  color: #fff;
+  font-size: 2.5rem; /* 40px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
 .container-matriz {
   display: flex;
   flex-direction: column;
@@ -442,6 +448,7 @@ ul img {
   font-size: 1.25rem;
   text-align: center;
   transition: background-color 0.3s, transform 0.3s;
+  max-width: 700px;
 }
 
 .matriz-content ul li:hover {
@@ -639,50 +646,54 @@ footer {
 .project-section {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
   background-color: #0d2b4c;
   color: #ffffff;
   font-family: Arial, sans-serif;
   gap: 2rem;
+  margin-right: 120px;
+  border-radius: 0 50px 50px 0;
 }
 
 .project-content {
-  width: 40%;
+  width: 25%;
   color: #ffffff;
 }
 
 .project-content h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
 .project-content p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.6;
+  padding: 2rem;
+  padding-right: 0;
   margin-bottom: 1rem;
   text-align: justify;
-}
-
-.project-gallery {
-  width: 30%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
 }
 
 .project-gallery img {
   width: 100%;
   height: auto;
+  padding: 2rem;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .project-description {
-  width: 30%;
-  background-color: #4caf50;
+  display: flex;
+  flex-direction: column;
+  background-color: #278c67;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0 50px 50px 0;
+  padding-right: 25px;
+  width: 75%;
+}
+.instagram-media {
+  height: 500px !important;
 }
 
 .project-description h3 {
@@ -693,10 +704,43 @@ footer {
 }
 
 .project-description p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+}
+.projeto-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.projeto-imgs img {
+  width: 250px;
+  border-radius: 100px;
+  box-shadow: 0px 0.625rem 3.125rem 0.625rem rgba(9, 177, 96, 0.9);
+}
+
+.project-text {
   color: #ffffff;
   text-align: justify;
   line-height: 1.6;
+  width: 280px;
+}
+.project-description2 {
+  width: auto;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  width: 1500px;
+  gap: 120px;
+  margin-left: 40px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 footer .social-media a {
