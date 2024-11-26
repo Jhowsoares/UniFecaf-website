@@ -847,6 +847,20 @@ function updateCarousel() {
 
   // Adiciona eventos de expansão da matriz curricular
   initExpandButtons();
+  updatePesquisaSection();
+}
+function updatePesquisaSection() {
+  const pesquisaSections = document.querySelectorAll(".areas-pesquisa");
+
+  pesquisaSections.forEach((section) => {
+    const sectionIndex = parseInt(section.getAttribute("data-index"), 10);
+
+    if (sectionIndex === currentIndex) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
 }
 
 // Função para atualizar a matriz curricular
