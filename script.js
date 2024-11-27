@@ -1079,3 +1079,37 @@ prevButtons.forEach((button) => {
     container.scrollBy({ left: -slideWidth, behavior: "smooth" });
   });
 });
+
+// Função que verifica a largura da janela e remove os itens com a classe 'sumir' ou 'sumir2'
+function verificarTamanho() {
+  const elementosSumir = document.querySelectorAll(".sumir"); // Seleciona todos os elementos com a classe 'sumir'
+  const elementosSumir2 = document.querySelectorAll(".sumir2"); // Seleciona todos os elementos com a classe 'sumir2'
+
+  // Para a classe 'sumir' (quando a tela for menor que 1630px)
+  if (window.innerWidth < 1630) {
+    elementosSumir.forEach((elemento) => {
+      elemento.style.display = "none"; // Oculta os itens com a classe 'sumir'
+    });
+  } else {
+    elementosSumir.forEach((elemento) => {
+      elemento.style.display = ""; // Restaura a exibição dos itens com a classe 'sumir'
+    });
+  }
+
+  // Para a classe 'sumir2' (quando a tela for menor que 1000px)
+  if (window.innerWidth < 1000) {
+    elementosSumir2.forEach((elemento) => {
+      elemento.style.display = "none"; // Oculta os itens com a classe 'sumir2'
+    });
+  } else {
+    elementosSumir2.forEach((elemento) => {
+      elemento.style.display = ""; // Restaura a exibição dos itens com a classe 'sumir2'
+    });
+  }
+}
+
+// Executa a função ao carregar a página
+window.addEventListener("load", verificarTamanho);
+
+// Executa a função toda vez que a janela for redimensionada
+window.addEventListener("resize", verificarTamanho);
