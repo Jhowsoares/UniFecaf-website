@@ -31,7 +31,7 @@ header {
     rgba(39, 140, 103, 1) 0%,
     rgba(2, 48, 89, 1) 100%
   );
-  padding: 0.9375rem 0; /* 15px */
+  padding: 0.9375rem 0;
   border-radius: 0px 0px 50px 50px;
   position: relative;
   z-index: 1;
@@ -51,7 +51,7 @@ header .container {
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6.25rem; /* 100px */
+  padding: 0 6.25rem;
 }
 
 hr {
@@ -59,7 +59,7 @@ hr {
 }
 
 .logo {
-  height: 4.375rem; /* 70px */
+  height: 4.375rem;
 }
 
 .search-bar {
@@ -67,24 +67,24 @@ hr {
 }
 
 .search-bar input {
-  padding: 0.5rem; /* 8px */
+  padding: 0.5rem;
   border: none;
-  border-radius: 1.25rem; /* 20px */
-  margin-right: 0.625rem; /* 10px */
-  width: 18.75rem; /* 300px */
+  border-radius: 1.25rem;
+  margin-right: 0.625rem;
+  width: 18.75rem;
   text-align: center;
 }
 
 .search-bar button {
   border: none;
   background-color: transparent;
-  border-radius: 0.25rem; /* 4px */
+  border-radius: 0.25rem;
   cursor: pointer;
-  margin-left: -3.125rem; /* -50px */
+  margin-left: -3.125rem;
 }
 
 .search-bar button img {
-  height: 1.875rem; /* 30px */
+  height: 1.875rem;
 }
 
 nav ul {
@@ -94,8 +94,8 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 1.25rem; /* 20px */
-  padding-top: 0.9375rem; /* 15px */
+  margin-left: 1.25rem;
+  padding-top: 0.9375rem;
 }
 
 nav ul li a {
@@ -103,7 +103,7 @@ nav ul li a {
   color: white;
   font-weight: bold;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 0.125rem solid transparent; /* 2px */
+  border-bottom: 0.125rem solid transparent;
 }
 
 nav ul li a:hover,
@@ -118,8 +118,8 @@ nav ul li a:active {
 p {
   text-align: justify;
   line-height: 1.6;
-  margin-bottom: 1.25rem; /* 20px */
-  font-size: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
 }
 .highlight {
   background-color: rgba(255, 255, 0, 0.5);
@@ -129,7 +129,7 @@ p {
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: -2.8125rem; /* -45px */
+  margin-top: -2.8125rem;
 }
 
 .carousel-prev,
@@ -148,16 +148,16 @@ p {
 }
 
 .carousel-prev {
-  left: 1rem; /* Botão na esquerda */
+  left: 1rem;
 }
 
 .carousel-next {
-  right: 1rem; /* Botão na direita */
+  right: 1rem;
 }
 
 .carousel-prev:hover,
 .carousel-next:hover {
-  color: #a8a8a8; /* Alterar a cor ao passar o mouse */
+  color: #a8a8a8;
 }
 
 .carousel img {
@@ -189,8 +189,8 @@ p {
 }
 
 .carousel-content h1 {
-  font-size: 3rem; /* 48px */
-  margin-bottom: 0.625rem; /* 10px */
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
 }
 
 .carousel-content button {
@@ -242,20 +242,20 @@ p {
 .matriz-curricular,
 .areas-pesquisa,
 .corpo-docente {
-  padding: 3.75rem 0; /* 60px */
+  padding: 3.75rem 0;
 }
 
 .curso h2,
 .preparacao h2,
 .areas-pesquisa h2,
 .corpo-docente h2 {
-  font-size: 2.5rem; /* 40px */
-  margin-bottom: 1.25rem; /* 20px */
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
   color: #054f3b;
 }
 .preparacao h3 {
-  font-size: 1.5rem; /* 40px */
-  margin-bottom: 1rem; /* 20px */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: #054f3b;
   text-align: center;
 }
@@ -277,7 +277,7 @@ p {
 }
 
 .matriz-curricular .ano {
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 .areas-pesquisa .pesquisa-grid {
@@ -298,7 +298,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem; /* 20px */
+  padding: 1.25rem;
   background-color: #09b160;
   color: white;
   text-align: center;
@@ -324,7 +324,7 @@ p {
 .corpo-docente .professor {
   display: flex;
   align-items: center;
-  gap: 1.25rem; /* 20px */
+  gap: 1.25rem;
 }
 .corpo-docente h2 {
   color: #fff;
@@ -345,7 +345,7 @@ p {
 .container-curso-2 {
   color: #000;
   background-color: #d9d9d9;
-  border-radius: 3.75rem 0px 0px 3.75rem; /* 60px */
+  border-radius: 3.75rem 0px 0px 3.75rem;
   width: 20%;
 }
 
@@ -362,15 +362,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -4.6875rem; /* -75px */
+  margin-top: -4.6875rem;
   color: #054f3b;
 }
 
 .container-curso-2 li {
   display: flex;
   align-items: center;
-  font-size: 1.5625rem; /* 25px */
-  padding: 1.25rem 0; /* 20px */
+  font-size: 1.5625rem;
+  padding: 1.25rem 0;
 }
 
 .bookmark {
@@ -380,23 +380,23 @@ p {
 }
 
 ul img {
-  height: 5rem; /* 80px */
-  padding-left: 1.5625rem; /* 25px */
-  padding-right: 2.5rem; /* 40px */
+  height: 5rem;
+  padding-left: 1.5625rem;
+  padding-right: 2.5rem;
 }
 
 .h2-matriz {
   margin-left: 50px;
   color: #fff;
-  font-size: 2.5rem; /* 40px */
-  margin-bottom: 1.25rem; /* 20px */
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .container-matriz {
   display: flex;
   flex-direction: column;
   color: #000;
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem;
   width: 100%;
   max-width: 100vw;
   align-content: flex-end;
@@ -413,9 +413,9 @@ ul img {
   display: flex;
   justify-content: space-between;
   background-color: #d9d9d9;
-  border-radius: 1.25rem 0px 0px 1.25rem; /* 20px */
-  margin-left: 12.5vw; /* 20vw */
-  padding: 0 1.25rem 0 1.25rem; /* 20px */
+  border-radius: 1.25rem 0px 0px 1.25rem;
+  margin-left: 12.5vw;
+  padding: 0 1.25rem 0 1.25rem;
   max-width: 100%;
   margin-bottom: 25px;
   width: 89%;
@@ -473,7 +473,7 @@ ul img {
 }
 
 .matriz-content.expanded {
-  display: flex; /* Exibe o conteúdo quando expandido */
+  display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   background-color: rgba(217, 217, 217, 0.3);
@@ -484,17 +484,17 @@ ul img {
 }
 
 .btn-matriz {
-  transform: rotate(90deg); /* Initial state */
+  transform: rotate(90deg);
   font-size: 50px;
   padding: 10px;
   border-radius: 0px 0px 100px 100px;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s; /* Smooth transition */
+  transition: transform 0.3s;
 }
 
 .btn-matriz.rotate {
-  transform: rotate(270deg); /* Rotate when expanded */
+  transform: rotate(270deg);
   border-radius: 100px 100px 0px 0px;
 }
 
@@ -504,7 +504,7 @@ ul img {
 
 .corpo-docente {
   display: flex;
-  overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   gap: 20px;
   padding: 20px;
@@ -519,7 +519,7 @@ ul img {
 }
 
 .professor-slide {
-  flex: 0 0 100%; /* Cada slide ocupa 100% da largura da tela */
+  flex: 0 0 100%;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -536,7 +536,6 @@ ul img {
   padding: 60px;
 }
 
-/* Botões de navegação únicos */
 .btns-prof {
   background: transparent;
   color: white;
@@ -563,7 +562,7 @@ ul img {
 }
 
 footer {
-  padding: 1.875rem 0; /* 30px */
+  padding: 1.875rem 0;
   text-align: center;
 }
 .hr-footer {
@@ -625,7 +624,7 @@ footer {
 .preparacao {
   background-color: #d9d9d9;
   width: 90%;
-  border-radius: 0% 18.75rem 18.75rem 0%; /* 300px */
+  border-radius: 0% 18.75rem 18.75rem 0%;
 }
 
 .preparacao p {
@@ -633,13 +632,13 @@ footer {
 }
 
 .preparacao h2 {
-  margin-top: -4.375rem; /* -70px */
-  padding-bottom: 1.875rem; /* 30px */
+  margin-top: -4.375rem;
+  padding-bottom: 1.875rem;
 }
 
 .preparacao .bookmark {
   left: calc(100% - 126.6rem);
-  bottom: 4.6875rem; /* 75px */
+  bottom: 4.6875rem;
 }
 
 .areas-pesquisa h2,
@@ -756,20 +755,20 @@ footer {
 .project-item {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espaçamento proporcional */
-  width: 100%; /* Ocupa toda a largura disponível */
-  gap: 1%; /* Espaço relativo entre os itens */
-  margin-left: 0%; /* Margem proporcional */
-  padding: 1%; /* Adiciona espaço interno proporcional */
-  box-sizing: border-box; /* Inclui padding nas dimensões */
+  justify-content: space-between;
+  width: 100%;
+  gap: 1%;
+  margin-left: 0%;
+  padding: 1%;
+  box-sizing: border-box;
 }
 .project-item p {
   color: #000;
 }
 
 .project-item > * {
-  flex: 1; /* Divide igualmente o espaço entre os itens */
-  max-width: 30%; /* Limita a largura máxima de cada item */
+  flex: 1;
+  max-width: 30%;
 }
 
 h4 {
@@ -779,7 +778,7 @@ h4 {
 }
 
 footer .social-media a {
-  margin: 0 0.625rem; /* 10px */
+  margin: 0 0.625rem;
   color: white;
   text-decoration: none;
 }
@@ -791,19 +790,19 @@ footer .social-media a {
   justify-content: center;
 }
 ::-webkit-scrollbar {
-  width: 0.75rem; /* 12px */
+  width: 0.75rem;
   background-color: rgba(2, 48, 89, 1);
 }
 
 ::-webkit-scrollbar-track {
   background: rgba(39, 140, 103, 0.3);
-  border-radius: 0.625rem; /* 10px */
+  border-radius: 0.625rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #09b160;
-  border-radius: 0.625rem; /* 10px */
-  border: 0.125rem solid rgba(2, 48, 89, 1); /* 2px */
+  border-radius: 0.625rem;
+  border: 0.125rem solid rgba(2, 48, 89, 1);
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -811,13 +810,12 @@ footer .social-media a {
 }
 
 ::-webkit-scrollbar-horizontal {
-  height: 0.625rem; /* 10px */
+  height: 0.625rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #06794c;
 }
-/* CSS geral (tamanhos base em rem) já aplicado aqui... */
 
 /* Media Queries */
 @media (max-width: 1870px) {
@@ -899,7 +897,7 @@ footer .social-media a {
 }
 @media (max-width: 1200px) {
   .carousel-content h1 {
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
   }
 
   .curso h2,
@@ -907,11 +905,11 @@ footer .social-media a {
   .matriz-curricular h2,
   .areas-pesquisa h2,
   .corpo-docente h2 {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
   }
 
   .container-curso-2 li {
-    font-size: 1.375rem; /* 22px */
+    font-size: 1.375rem;
   }
   .bookmark {
     width: 70px;
@@ -936,11 +934,11 @@ footer .social-media a {
 }
 @media (max-width: 992px) {
   p {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
   }
 
   .carousel-content h1 {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
   }
 
   .curso h2,
@@ -948,11 +946,11 @@ footer .social-media a {
   .matriz-curricular h2,
   .areas-pesquisa h2,
   .corpo-docente h2 {
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem;
   }
 
   .container-curso-2 li {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
   }
   .matriz-content ul li {
     max-width: 300px;

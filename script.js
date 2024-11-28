@@ -785,7 +785,6 @@ const engineeringTexts = [
   },
 ];
 
-// Definindo as imagens do carrossel e o índice inicial
 const images = [
   "imgs/bg-computaçao.png",
   "imgs/bg-civil.png",
@@ -794,29 +793,23 @@ const images = [
 ];
 let currentIndex = 0;
 
-// Seletores do carrossel
 const imgElement = document.querySelector(".carousel-item img");
 const prevButton = document.querySelector(".carousel-prev");
 const nextButton = document.querySelector(".carousel-next");
 const navLinks = document.querySelectorAll(".carousel-nav a");
 
-// Função para atualizar o carrossel
 function updateCarousel() {
-  // Atualiza a imagem do carrossel
   imgElement.src = images[currentIndex];
 
-  // Atualiza os textos conforme a engenharia selecionada
   const engineeringData = engineeringTexts[currentIndex];
   document.querySelector(".carousel-content h1").textContent =
     engineeringData.name;
   document.querySelector(".carousel-content p").textContent =
     engineeringData.degree;
 
-  // Atualizar o conteúdo de descrição do curso
   const courseDescriptionElement = document.querySelector(".curso p");
   courseDescriptionElement.innerHTML = engineeringData.courseDescription;
 
-  // Atualizar as informações sobre o curso (tipo, modalidade, etc.)
   document.querySelectorAll(".container-curso-2 ul li").forEach((li, index) => {
     const infoFields = ["courseType", "modality", "duration", "period"];
     li.innerHTML = `<img src="imgs/sobrecurso${index + 1}.png" alt="" />${
@@ -824,28 +817,23 @@ function updateCarousel() {
     }`;
   });
 
-  // Atualiza a seção "VOCÊ VAI SE PREPARAR PARA"
   const preparacaoElement = document.querySelector(".preparacao p");
   preparacaoElement.innerHTML = engineeringData.prepareFor;
 
-  // Atualiza as áreas de atuação dentro da seção "VOCÊ VAI SE PREPARAR PARA"
   const areasList = document.querySelector(".preparacao ol");
-  areasList.innerHTML = ""; // Limpa a lista existente
+  areasList.innerHTML = "";
   engineeringData.areas.forEach((area) => {
     const listItem = document.createElement("li");
     listItem.textContent = area;
     areasList.appendChild(listItem);
   });
 
-  // Atualiza os links de navegação do carrossel
   navLinks.forEach((link, index) => {
     link.classList.toggle("active", index === currentIndex);
   });
 
-  // Atualiza a matriz curricular
   updateMatrizCurricular(engineeringData.matrizCurricular);
 
-  // Adiciona eventos de expansão da matriz curricular
   initExpandButtons();
   updatePesquisaSection();
 }
@@ -863,10 +851,9 @@ function updatePesquisaSection() {
   });
 }
 
-// Função para atualizar a matriz curricular
 function updateMatrizCurricular(matrizCurricular) {
   const matrizContainer = document.querySelector(".container-matriz");
-  matrizContainer.innerHTML = ""; // Limpa o conteúdo atual
+  matrizContainer.innerHTML = "";
 
   matrizCurricular.forEach((anoData) => {
     const anoDiv = document.createElement("div");
@@ -897,17 +884,16 @@ function updateMatrizCurricular(matrizCurricular) {
 
       const ul = document.createElement("ul");
 
-      // Adiciona os itens à lista `ul`, garantindo a quantidade necessária de `<li>`
       semestreData.disciplinas.forEach((disciplina, index) => {
         let li;
-        // Verifica se existe um `<li>` já presente no `ul`
+
         if (ul.children[index]) {
-          li = ul.children[index]; // Reutiliza o `<li>` existente, se possível
+          li = ul.children[index];
         } else {
-          li = document.createElement("li"); // Cria um novo `<li>` se não existir
+          li = document.createElement("li");
           ul.appendChild(li);
         }
-        li.textContent = disciplina; // Define o texto do item
+        li.textContent = disciplina;
       });
 
       semestreDiv.appendChild(ul);
@@ -916,7 +902,6 @@ function updateMatrizCurricular(matrizCurricular) {
   });
 }
 
-// Função para expandir ou colapsar a matriz curricular
 function initExpandButtons() {
   document.querySelectorAll(".btn-matriz").forEach((button) => {
     button.addEventListener("click", function () {
@@ -968,10 +953,8 @@ function initExpandButtons() {
   });
 }
 
-// Inicializa o carrossel
 updateCarousel();
 
-// Chama a função para atualizar o carrossel e textos logo de início
 updateCarousel();
 
 prevButton.addEventListener("click", () => {
@@ -999,10 +982,8 @@ function searchAndScroll() {
     .toLowerCase();
   if (!searchInput) return;
 
-  // Remove destaques de buscas anteriores
   removeHighlights();
 
-  // Seleciona todos os nós de texto no documento
   const walker = document.createTreeWalker(
     document.body,
     NodeFilter.SHOW_TEXT,
@@ -1013,16 +994,13 @@ function searchAndScroll() {
   let found = false;
   let firstHighlight = null;
 
-  // Percorre cada nó de texto
   while (walker.nextNode()) {
     const node = walker.currentNode;
     const text = node.nodeValue.toLowerCase();
 
-    // Verifica se o texto do nó contém o termo de busca
     if (text.includes(searchInput)) {
       highlightText(node, searchInput);
 
-      // Armazena o primeiro destaque encontrado para rolar até ele
       if (!found) {
         firstHighlight = node.parentElement.querySelector(".highlight");
         found = true;
@@ -1030,9 +1008,7 @@ function searchAndScroll() {
     }
   }
 
-  // Se encontrou algum termo, rola até o primeiro destaque
   if (found && firstHighlight) {
-    // Centraliza o elemento na tela
     setTimeout(() => {
       firstHighlight.scrollIntoView({ behavior: "smooth", block: "center" });
     }, 100);
@@ -1041,14 +1017,12 @@ function searchAndScroll() {
   }
 }
 
-// Função para destacar o texto encontrado
 function highlightText(textNode, searchText) {
   const parent = textNode.parentNode;
   const text = textNode.nodeValue;
   const index = text.toLowerCase().indexOf(searchText);
 
   if (index >= 0) {
-    // Cria três partes do texto: antes, o termo buscado, e depois
     const before = document.createTextNode(text.slice(0, index));
     const highlight = document.createElement("span");
     highlight.className = "highlight";
@@ -1057,7 +1031,6 @@ function highlightText(textNode, searchText) {
       text.slice(index + searchText.length)
     );
 
-    // Substitui o nó de texto original pelos novos nós com destaque
     parent.replaceChild(after, textNode);
     parent.insertBefore(highlight, after);
     parent.insertBefore(before, highlight);
@@ -1080,36 +1053,31 @@ prevButtons.forEach((button) => {
   });
 });
 
-// Função que verifica a largura da janela e remove os itens com a classe 'sumir' ou 'sumir2'
 function verificarTamanho() {
-  const elementosSumir = document.querySelectorAll(".sumir"); // Seleciona todos os elementos com a classe 'sumir'
-  const elementosSumir2 = document.querySelectorAll(".sumir2"); // Seleciona todos os elementos com a classe 'sumir2'
+  const elementosSumir = document.querySelectorAll(".sumir");
+  const elementosSumir2 = document.querySelectorAll(".sumir2");
 
-  // Para a classe 'sumir' (quando a tela for menor que 1630px)
   if (window.innerWidth < 1630) {
     elementosSumir.forEach((elemento) => {
-      elemento.style.display = "none"; // Oculta os itens com a classe 'sumir'
+      elemento.style.display = "none";
     });
   } else {
     elementosSumir.forEach((elemento) => {
-      elemento.style.display = ""; // Restaura a exibição dos itens com a classe 'sumir'
+      elemento.style.display = "";
     });
   }
 
-  // Para a classe 'sumir2' (quando a tela for menor que 1000px)
   if (window.innerWidth < 1000) {
     elementosSumir2.forEach((elemento) => {
-      elemento.style.display = "none"; // Oculta os itens com a classe 'sumir2'
+      elemento.style.display = "none";
     });
   } else {
     elementosSumir2.forEach((elemento) => {
-      elemento.style.display = ""; // Restaura a exibição dos itens com a classe 'sumir2'
+      elemento.style.display = "";
     });
   }
 }
 
-// Executa a função ao carregar a página
 window.addEventListener("load", verificarTamanho);
 
-// Executa a função toda vez que a janela for redimensionada
 window.addEventListener("resize", verificarTamanho);
