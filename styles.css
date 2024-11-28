@@ -327,9 +327,7 @@ p {
   gap: 1.25rem; /* 20px */
 }
 .corpo-docente h2 {
-  background-color: #948f8f;
-  border-radius: 100px;
-  border: solid 5px #288c64;
+  color: #fff;
 }
 
 .corpo-docente img {
@@ -365,6 +363,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: -4.6875rem; /* -75px */
+  color: #054f3b;
 }
 
 .container-curso-2 li {
@@ -643,12 +642,20 @@ footer {
   bottom: 4.6875rem; /* 75px */
 }
 
-.areas-pesquisa h2 {
+.areas-pesquisa h2,
+.docente-titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 35px;
+  color: #fff;
+}
+.docente-titulo {
+  margin-top: 2rem;
+  padding: 0;
+  font-size: 2.5rem;
+  margin-top: 5rem;
 }
 
 .areas-pesquisa hr {
@@ -657,7 +664,7 @@ footer {
 .project-section {
   display: flex;
   flex-direction: row;
-  background-color: #e7f3ff;
+  background-color: #d9d9d9;
   color: #ffffff;
   font-family: Arial, sans-serif;
   gap: 2rem;
@@ -676,6 +683,7 @@ footer {
   margin-bottom: 1rem;
   padding: 2rem;
   text-align: center;
+  color: #054f3b;
 }
 
 .project-content p {
