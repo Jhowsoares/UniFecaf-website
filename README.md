@@ -30,5 +30,11 @@ Esta landing page é uma solução web estática construída com HTML, CSS e Jav
 - ✅ Design adaptado para dispositivos móveis
 
 ---
+## Resumo
+
+• Desenvolveu website institucional utilizando HTML e CSS, garantindo navegação clara, acessibilidade e visual consistente com identidade acadêmica.
+• Aplicou princípios de UX para organizar conteúdos e facilitar a leitura de informações sobre cursos e estruturas.
+• Estruturou layout responsivo, adaptando componentes para diferentes resoluções e dispositivos.
+• Implementou boas práticas de organização de código e semântica para facilitar manutenção futura.
 
 
